@@ -1,0 +1,18 @@
+print() -> imprimir
+input() -> para pegar um dado do usuário
+
+if(aceita condição), else(aceita apenas mensagem), elif(aceita condição) -> para condicionais
+usuario = input("Informe o usuário do sistema!")
+
+if(usuario == "Flávio"):
+    print("Seja bem-vindo Flávio!")
+elif(usuario == "Douglas"):
+    print("Seja bem-vindo Douglas!")
+elif(usuario == "Nico"):
+    print("Seja bem-vindo Nico")
+else:
+    print("Usuário não identificado!")
+
+
+Interpolação de variáveis:
+print("Tentativa {} de {}".format(rodada, total_tentativas))
