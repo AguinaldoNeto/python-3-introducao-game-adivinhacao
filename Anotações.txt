@@ -1,6 +1,6 @@
 print() -> imprimir
 input() -> para pegar um dado do usuário
-
+-----------------------------------------------------------------------------------------------------------------------------------
 if(aceita condição), else(aceita apenas mensagem), elif(aceita condição) -> para condicionais
 usuario = input("Informe o usuário do sistema!")
 
@@ -12,7 +12,38 @@ elif(usuario == "Nico"):
     print("Seja bem-vindo Nico")
 else:
     print("Usuário não identificado!")
-
-
+-----------------------------------------------------------------------------------------------------------------------------------
+While é tradicional
+for -> for inserir_variavel_desejada in range(1,inserir_variavel_desejada + 1): 
+	for rodada in range(1,total_tentativas + 1):
+-----------------------------------------------------------------------------------------------------------------------------------
 Interpolação de variáveis:
 print("Tentativa {} de {}".format(rodada, total_tentativas))
+
+***É possível inverter os parâmetros a partir da ordem. A ordem começa em 0, depois 1,2,3,...
+print("Tentativa {1} de {0}".format(3,10))
+Tentativa 10 de 3"
+
+***É possível definir quantas casas eu quero após o ponto. O :f indica que será um float(que vem automaticamente com 6 casas após o ponto) 
+e o .2 indica quantas casas eu terei após o ponto.
+print("O Tênis Nike, modelo X9 custa {:.2f}".format(199.9))
+O Tênis Nike, modelo X9 custa 199.90
+
+***É possível definir quantas casas eu quero no total.Eu quero 7 números no total, sendo 5 antes do ponto e 2 após o ponto
+O :07 vai dizer que eu terei 7 números ao todo e o .2 significa que eu terei 2 números após o ponto.
+OBS: Se eu não colocar o 0 antes do 7, vão ficar dois espeços ao inves de zeros no exemplo.
+
+print("O Tênis Nike, modelo X9 custa {:07.2f}".format(199.9))
+O Tênis Nike, modelo X9 custa 00199.90
+
+***É possível formatar inteiros a partir do :valor'd', conforme exemplo abaixo
+print("Data {:02d}/{:02d}".format(9/4)
+09/04
+-----------------------------------------------------------------------------------------------------------------------------------
+or é a mesma coisa que && para Java. Significa ou;
+and é a mesma coisa que || para Java. Significa e;
+-----------------------------------------------------------------------------------------------------------------------------------
+break -> Se tal função está satisfeita, pare aqui mesmo (saia do laço).
+continue -> Se tal função NÃO está satisfeita, continue (fique no laço, tente mais uma vez).
+break sai do bloco do laço abruptamente, continue apenas pula para próxima iteração.
+-----------------------------------------------------------------------------------------------------------------------------------
