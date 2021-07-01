@@ -47,3 +47,19 @@ break -> Se tal função está satisfeita, pare aqui mesmo (saia do laço).
 continue -> Se tal função NÃO está satisfeita, continue (fique no laço, tente mais uma vez).
 break sai do bloco do laço abruptamente, continue apenas pula para próxima iteração.
 -----------------------------------------------------------------------------------------------------------------------------------
+Random 
+Ele precisa ser importado (import random) para poderser utilizado, pois ele não está automaticamente disponível dentro do programa. 
+Além disso ele vai de 0.0 até 1.0 e contém várias casas decimais. 
+Para o game, eu quero que o número mágico seja sorteado no intervalo de 0-100. Para isso:
+round(random.randrange(1, 101))
+round() arredonda o valor de random. 
+random.randrange(1, 101) determina o intervalo.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Abs()
+Essa função faz com todo número seja absoluto, ou seja positivo.
+
+
+
+
+
